@@ -1,0 +1,30 @@
+# ── Web framework ─────────────────────────────────────────────────────────────
+fastapi==0.110.0
+uvicorn[standard]==0.27.1
+pydantic==2.6.1
+
+# ── Data science ──────────────────────────────────────────────────────────────
+pandas==2.2.0
+numpy==1.26.4
+scikit-learn==1.4.0
+
+# ── Time-series forecasting ───────────────────────────────────────────────────
+# Prophet depends on cmdstanpy. On a fresh machine run:
+#   pip install prophet
+# If you hit a cmdstan build error try:
+#   pip install pystan==2.19.1.1 prophet==1.1.5
+prophet==1.1.5
+
+# ── Synthetic data ────────────────────────────────────────────────────────────
+faker==22.0.0
+
+# ── HTTP client (used in tests) ───────────────────────────────────────────────
+httpx==0.26.0
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.0.0
+
+# ── Optional: real cloud connectors (only needed when USE_REAL_CLOUD=true) ───
+# boto3==1.34.0
+# google-cloud-bigquery==3.17.0
+# google-cloud-billing==1.13.0
